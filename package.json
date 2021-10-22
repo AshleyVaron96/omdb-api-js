@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dest/ && mkdir dist",
+    "build": "cp -R css js dist/ && cp index.html dist/",
+    "deploy": "gh-pages -d dist/"
   },
   "repository": {
     "type": "git",
